@@ -12,9 +12,6 @@ body {
   color: #bdc5cf;
   line-height: 1.6;
 }
-/* ================================
-   HEADER & NAVIGATION
-================================= */
 
 header {
   background-color: #142549;
@@ -44,9 +41,7 @@ nav a:hover {
   color: #212122;
 }
 
-/* ================================
-   HERO SECTION
-================================= */
+
 
 .hero {
   display: flex;
@@ -68,9 +63,7 @@ background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100
   margin-bottom: 10px;
 }
 
-/* ================================
-   SECTIONS
-================================= */
+
 
 section {
   padding: 60px 20px;
@@ -82,9 +75,7 @@ h2 {
   color: #131414;
 }
 
-/* ================================
-   SKILLS
-================================= */
+
 
 .skills span {
   display: inline-block;
@@ -100,9 +91,7 @@ h2 {
   background-color: #1e40af;
 }
 
-/* ================================
-   PROJECT CARDS
-================================= */
+
 
 .projects {
   display: grid;
@@ -123,9 +112,7 @@ h2 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ================================
-   CONTACT FORM
-================================= */
+
 
 form {
   max-width: 400px;
@@ -154,9 +141,7 @@ button:hover {
   background-color: #1e40af;
 }
 
-/* ================================
-   FOOTER
-================================= */
+
 
 footer {
   background-color: #111827;
@@ -165,18 +150,16 @@ footer {
   text-align: center;
 }
 
-/* ================================
-   RESPONSIVE BREAKPOINTS
-================================= */
 
-/* Tablet */
+
+
 @media (min-width: 768px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Desktop */
+
 @media (min-width: 1024px) {
   .projects {
     grid-template-columns: repeat(3, 1fr);
