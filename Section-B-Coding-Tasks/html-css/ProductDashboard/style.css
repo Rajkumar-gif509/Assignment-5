@@ -1,0 +1,132 @@
+/* ================================
+   GLOBAL STYLES
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+/* ================================
+   DASHBOARD LAYOUT
+================================= */
+
+#R {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:
+    "sidebar navbar"
+    "sidebar main";
+  height: 100vh;
+}
+
+/* ================================
+   SIDEBAR
+================================= */
+
+#A{
+  grid-area: sidebar;
+  background-color: #111827;
+  color: white;
+  padding: 30px 20px;
+}
+
+#A ul {
+  list-style: none;
+}
+
+#A li {
+  margin: 15px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#A li:hover {
+  color: #10b981;
+}
+
+/* ================================
+   NAVBAR
+================================= */
+
+#J {
+  grid-area: navbar;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#J input {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+#J img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+.main {
+  grid-area: main;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+
+
+#U {
+  display: grid;
+  gap: 20px;
+}
+
+#M {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
+}
+
+#M:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+#A1 {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+#R1 {
+  color: #10b981;
+}
+
+.out-stock {
+  color: red;
+}
+
+
+@media (min-width: 768px) {
+  #U {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #U {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
