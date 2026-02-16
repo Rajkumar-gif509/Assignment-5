@@ -1,18 +1,17 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product Dashboard</title>
-<link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <title>Product Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div id="R">
+<div class="layout">
 
   <!-- Sidebar -->
-  <aside id="A">
+  <aside class="sidebar">
     <h2>MyStore</h2>
     <ul>
       <li>Dashboard</li>
@@ -23,52 +22,62 @@
     </ul>
   </aside>
 
-  <!-- Navbar -->
-  <header id="J">
-    <input type="text" placeholder="Search products...">
-    <div class="profile">
-      <span>Rajkumar</span>
-      <img src="https://via.placeholder.com/35" alt="Profile">
-    </div>
-  </header>
-
   <!-- Main Content -->
-  <main class="main">
-    <h2>Products</h2>
+  <div class="main">
 
-    <div id="U">
+    <div class="topbar">
+      <input style="border-radius: 10px;" type="text" placeholder="Search products...">
+      <h3 style="color: aliceblue;">Rajkumar </h3>
 
-      <div id="M">
-        <img src="https://via.placeholder.com/250" alt="Product">
+    </div>
+
+    <div class="products">
+
+      <div class="card">
+        <img style="height: 200px"; src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3FixXEMOD1u8RctXBYOcJb6hi9ARCYNk3HA&s">
         <h3>Wireless Headphones</h3>
-        <p class="price">$59.99</p>
-        <p class="stock in-stock">In Stock</p>
+        <p>15,999</p>
+        <span class="stock">In Stock</span>
       </div>
 
-      <div id="M">
-        <img src="https://via.placeholder.com/250" alt="Product">
-        <h3>Smart Watch</h3>
-        <p class="price">$89.99</p>
-        <p class="stock out-stock">Out of Stock</p>
+      <div class="card">
+        <img style="height: 200px;"   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjKQJWfEayScYVa8xnxhBJwtfvEfXRdGivw&s">
+        <h3>smart Watch</h3>
+        <p>5,999</p>
+        <span class="stock">In Stock</span>
       </div>
 
-      <div id="M">
-        <img src="https://via.placeholder.com/250" alt="Product">
-        <h3>Bluetooth Speaker</h3>
-        <p class="price">$39.99</p>
-        <p class="stock in-stock">In Stock</p>
+      <div class="card">
+        <img src="https://picsum.photos/id/2/3888/2592">
+        <h3>Laptop</h3>
+        <p>57,999</p>
+        <span class="stock">In Stock</span>
       </div>
 
-      <div id="M">
-        <img src="https://via.placeholder.com/250" alt="Product">
-        <h3>Gaming Mouse</h3>
-        <p class="price">$29.99</p>
-        <p class="stock in-stock">In Stock</p>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWTQ1fiNbEFYc-RQjjhCfZdMB1xzc0Zv2EQ&s">
+        <h3>camera</h3>
+        <p>22,999</p>
+        <span class="stock">In Stock</span>
+      </div>
+
+       <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0R5JytsxJInVxNGse76xP1RWklvtbvAoSTQ&s">
+        <h3>Vivo</h3>
+        <p>62,999</p>
+        <span class="stock">In Stock</span>
+      </div>
+
+       <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjyL8ej-WLvKbFJcZtKjt8T12Cp4n_IuTcJg&s">
+        <h3>Gaming mouse</h3>
+        <p>1,500</p>
+        <span class="stock">In Stock</span>
       </div>
 
     </div>
 
-  </main>
+  </div>
 
 </div>
 
